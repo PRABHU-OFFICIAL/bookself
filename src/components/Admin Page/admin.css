@@ -1,0 +1,265 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add some global styling */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.admin-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.admin-nav {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 1rem;
+    flex: 0 0 200px;
+}
+
+.admin-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-nav li {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-nav li:hover {
+    background-color: #2c3e50;
+}
+
+.admin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stored-books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.book-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.book-entry img {
+    width: 150px;
+    /* Adjust the width of the book cover as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    width: 150px;
+    /* Adjust the width of the book details container as needed */
+}
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-book-form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-book-form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.add-book-form input:focus {
+    border-color: #3498db;
+}
+
+.add-book-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.add-book-form button:hover {
+    background-color: #2980b9;
+}
+
+/* ... (previous styles) ... */
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-book-form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-book-form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect the width */
+    width: 100%;
+    /* Take up the full width of the container */
+}
+
+.add-book-form input:focus {
+    border-color: #3498db;
+}
+
+.add-book-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.add-book-form button:hover {
+    background-color: #2980b9;
+}
+
+/* ... (previous styles) ... */
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    background-color: #2c3e50;
+    /* Update background color to a dark color */
+    color: #ecf0f1;
+    /* Set text color to a light color */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-book-form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.add-book-form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ecf0f1;
+    /* Match the form background color */
+    color: #2c3e50;
+    /* Set text color to a dark color for better contrast */
+}
+
+.add-book-form input:focus {
+    border-color: #3498db;
+}
+
+.add-book-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.add-book-form button:hover {
+    background-color: #2980b9;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Optional: Add transition for smooth effects */
+.search-bar input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.stored-books button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stored-books button:hover {
+    background-color: #45a049;
+}
+
+.stored-books button:active {
+    background-color: #3e8e41;
+}
